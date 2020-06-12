@@ -1,0 +1,195 @@
+/*----------------estilo del index------------*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', monospace;
+}
+header{
+  position:relative;
+  width: 100%;
+  color: #fff;
+}
+header img{
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+}
+header a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-menu {
+  background: #003459;
+}
+.logo-menu h1{
+  font-weight: 300px;
+  font-size: 50px;
+  color:  #f0a500;
+}
+.logo-menu .menu a{
+  display: inline-flex;
+  padding: 25px 25px;
+  font-size: 20px;
+}
+.logo-menu .menu a:hover{
+  text-decoration: none ;
+  color: #f0a500;
+}
+
+/*-----------Estilo del Slider------------------*/
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider .caption h1{
+	font-size: 50px;
+}
+
+.slider .caption p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.pagination{
+	position: absolute;
+	top: 99%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li{
+	font-size: 20px;
+	margin: 2px 5px;
+	color: #858585;
+	cursor: pointer;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+
+@media screen and (max-width: 600px){
+	.slider .caption p{
+		display: none;
+	}
+
+	.slider .caption h1{
+		font-size: 35px;
+	}
+
+	.left, .right{
+		font-size: 30px;
+	}
+
+	.slider li img{
+		width: 600px;
+	}
+
+	.pagination{
+		display: none;
+	}
+}
+
+
+/*-----------Estilo de las imagenes------------------*/
+.main{
+margin: 5px 0;
+}
+.main .thumb {
+  margin-bottom: 15px;
+}
+.main .thumb img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/*-----------Estilo del Footer------------------*/
+
+/*footer*/
+
+footer{
+background:#003459;
+color: #fff;
+padding: 40px 0;
+}
+
+footer .nav a{
+  width: 100%;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+footer .nav a:hover {
+  text-decoration: underline;
+}
+
+footer .logo{
+  background: #20B2AA;
+  color: #fff;
+  padding: 20px;
+  font-weight: 300;
+  border-radius: 0 30px 0 30px;
+  font-size: 30px;
+  }
